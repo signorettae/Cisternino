@@ -438,7 +438,7 @@ bool FishGramHandler(uint32_t id, const char *firstName, const char *lastName, c
 
     else if (menu == 6) {  //inserimento Telegram ID
       int n = 0;
-     //TODO implementare controllo caratteri usando msg_conv[n].isAlpha. Così facendo si possono inserire solo numeri
+      //TODO implementare controllo caratteri usando msg_conv[n].isAlpha. Così facendo si possono inserire solo numeri
       new_tid = atoi (msg_conv); //converte il messaggio convertito in intero e salva il valore nella variabile temporanea "new_tid"
       String risposta_menu6 = "Hai inserito il valore ";
       risposta_menu6 +=  String (new_tid);
@@ -593,9 +593,6 @@ void setup(void) {
   FishGram.messageEvent(FishGramHandler);
   FishGram.begin(F(MY_TELEGRAM_TOKEN));
 
-  intervallo = FishinoEEPROM.read32u(slot_intervallo);
-  soglia = FishinoEEPROM.read32u(slot_soglia);
-
   if (char(FishinoEEPROM.read8u(0)) != '#') {//necessario per pulire l'EEPROM al primo untilizzo. controlla che nello slot non sia presente il carattere '#'
     FishinoEEPROM.eraseAll(); //se presente pulisce l'intera EEPROM
     Serial.println("EEPROM resettata"); //ci comunica di sul monitor seriale dell'avvenuto reset dell'EEPROM
@@ -603,6 +600,9 @@ void setup(void) {
   }
   else {
     Serial.println("EEPROM già resettata");//in caso contrario non fa nulla, si limita ad avvisarci sul monitor seriale
+
+    intervallo = FishinoEEPROM.read32u(slot_intervallo);
+    soglia = FishinoEEPROM.read32u(slot_soglia);
 
     for (int i = 0; i < num_utenti; i++) {
 
