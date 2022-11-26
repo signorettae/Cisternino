@@ -18,7 +18,7 @@ Si tratta di un un dispositivo in grado di rilevare la quantità di acqua presen
 
 # Cablaggio
 
-![Image deactivate](C:\Users\Emanuele\Desktop\Repo\Cisternino\Img\cablaggio.png)
+![Image deactivate](Img/cablaggio.png)
 
 # Software
 
@@ -84,7 +84,7 @@ Ricordiamoci di inserire i parametri di confiurazione della rete WiFi e la chiav
 
 Una volta caricato lo sketch, avviamo il bot e utilizziamo i comandi definiti nel programma per configurare gli utenti e la gestione delle notifiche, come nelle immagini riportate di seguito.
 
-![Image deactivate](C:\Users\Emanuele\Desktop\Repo\Cisternino\Img\config1.png)![Image deactivate](C:\Users\Emanuele\Desktop\Repo\Cisternino\Img\config2.png)
+![Image deactivate](Img/config1.png)![Image deactivate](Img/config2.png)
 
 # Risultato finale
 
@@ -92,6 +92,6 @@ Una volta terminata la configurazione del bot, se il livello dell'acqua sarà al
 
 
 
-![Image deactivate](C:\Users\Emanuele\Desktop\Repo\Cisternino\Img\messaggio.png)
+![Image deactivate](Img\messaggio.png)
 
 Sentiti libero  di modificare lo sketch, di apportare tutte le migliorie necessarie e di inviare le pull requests!
