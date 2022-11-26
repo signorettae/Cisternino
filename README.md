@@ -92,6 +92,6 @@ Una volta terminata la configurazione del bot, se il livello dell'acqua sarà al
 
 
 
-![Image deactivate](Img\messaggio.png)
+![Image deactivate](Img/messaggio.png)
 
 Sentiti libero  di modificare lo sketch, di apportare tutte le migliorie necessarie e di inviare le pull requests!
